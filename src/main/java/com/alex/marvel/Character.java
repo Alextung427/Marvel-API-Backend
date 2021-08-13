@@ -1,16 +1,17 @@
 package com.alex.marvel;
 
-public class Characters {
-
+public class Character {
     private String id;
     private String name;
     private String description;
-    private String image;
 
-    public Characters(String id, String name, String image) {
+    public Character(String id, String name, String description) {
+    }
+
+    public void characterId (String id, String name, String description){
         this.id = id;
         this.name = name;
-        this.image = image;
+        this.description = description;
     }
 
     public String getId() {
@@ -23,9 +24,5 @@ public class Characters {
 
     public String getName() {
         return name;
-    }
-
-    public String getImage() {
-        return image;
     }
 }
